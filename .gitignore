@@ -1,0 +1,42 @@
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+snmp.php
+config/*.local.php
+config/local.php
+*.pem
+*.key
+*.p12
+*.pfx
+# Inventory, captures, caches and exports
+/cache/
+/exports/
+/dumps/
+/backups/
+/logs/
+device-*.json
+mac-*.json
+*.log
+*.lock
+*.sql
+*.sql.*
+*.pcap
+*.pcapng
+*.snmpwalk
+# Local tools and generated packages
+/vendor/
+/node_modules/
+/work/
+/dist/
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.bak
+*.swp
+.DS_Store
+Thumbs.db
+/.idea/
+/.vscode/
+# Synthetic tests/fixtures are intentionally tracked.
