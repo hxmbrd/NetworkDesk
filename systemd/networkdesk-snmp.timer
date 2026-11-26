@@ -1,0 +1,10 @@
+[Unit]
+Description=Run NetworkDesk SNMP polling every 30 seconds
+
+[Timer]
+OnCalendar=*-*-* *:*:00,30
+AccuracySec=1s
+Unit=networkdesk-snmp.service
+
+[Install]
+WantedBy=timers.target

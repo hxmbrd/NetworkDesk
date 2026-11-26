@@ -1,0 +1,10 @@
+[Unit]
+Description=Run NetworkDesk MAC polling every minute
+
+[Timer]
+OnCalendar=*-*-* *:*:15
+AccuracySec=1s
+Unit=networkdesk-mac.service
+
+[Install]
+WantedBy=timers.target

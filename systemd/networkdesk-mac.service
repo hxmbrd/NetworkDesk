@@ -1,0 +1,14 @@
+[Unit]
+Description=NetworkDesk MAC FDB polling (read only)
+After=network-online.target mariadb.service
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=www-data
+Group=www-data
+WorkingDirectory=/var/www/html/glpi
+ExecStart=/usr/bin/php /var/www/html/glpi/plugins/networkdesk/bin/poll-mac.php
+TimeoutStartSec=180s
+StandardOutput=journal
+StandardError=journal
