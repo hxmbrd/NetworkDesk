@@ -1,0 +1,57 @@
+#nd{display:grid;grid-template-columns:205px minmax(0,1fr) 285px;gap:14px;min-height:65vh}#nd aside{background:#242b35;color:#eee;padding:16px;border-radius:9px}#nd aside button,#nd-details button{display:block;width:100%;text-align:left;border:0;border-radius:5px;margin:6px 0;padding:9px;background:#394351;color:white}#nd aside a{color:#ffb66d}#nd main{min-width:0}#nd-details{padding:14px;border:1px solid #bbb;border-radius:8px;overflow-wrap:anywhere}#nd-details a{display:block;margin:12px 0;color:#c56a20}#nd .nd-tools{display:flex;gap:8px;flex-wrap:wrap}#nd input,#nd select{padding:8px;border:1px solid #aaa;border-radius:5px}#nd .nd-device{background:#28313d;color:#eee;padding:12px;margin:12px 0;border-radius:7px;overflow:auto}#nd .nd-device h3{font-size:15px;margin:0 0 4px;color:#eee}#nd .nd-banks{display:flex;gap:12px;margin-top:10px;width:max-content}#nd .nd-ports{display:grid;grid-auto-flow:column;gap:3px}#nd .nd-port{background:#9ca3af;color:#111;border:2px solid #20252c;border-radius:4px;min-width:30px;max-width:95px;min-height:32px;font-size:10px;padding:3px;overflow:hidden}#nd .nd-port.connected{background:#9bd36a}#nd .nd-port.fiber{border-color:#4da7ef}#nd .nd-port.dim{opacity:.22}#nd .nd-port:focus{outline:2px solid #ff992e}#nd .nd-port:hover{outline:2px solid #ff992e}@media(max-width:1100px){#nd{grid-template-columns:170px minmax(0,1fr)}#nd-details{grid-column:2}}@media(max-width:700px){#nd{display:block}}
+
+#nd{position:relative;isolation:isolate}#nd .nd-wires{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:5;overflow:hidden}#nd .nd-wires path{stroke:#46b7ff;stroke-width:3;fill:none;stroke-linejoin:round;stroke-linecap:round;filter:drop-shadow(0 0 2px #142638)}#nd .nd-port.nd-muted{opacity:.38}#nd .nd-port.nd-selected,#nd .nd-port.nd-peer{position:relative;z-index:6;opacity:1!important;outline:2px solid #ff992e;background:#ffb66d}#nd .nd-port.nd-peer{outline-color:#46b7ff;background:#8ed5ff}
+#nd .nd-active{background:#c66b24!important}#nd #nd-wire-toggle{display:flex;align-items:center;gap:6px}#nd #nd-wire-toggle[hidden]{display:none}#nd .nd-wires .nd-wire-muted{opacity:.23}#nd .nd-topology-wrap{overflow:auto;max-height:80vh;border:1px solid #a5acb6;border-radius:8px;background:#eef1f5}#nd .nd-top-edge{cursor:pointer}#nd .nd-edge-hit{stroke:transparent;stroke-width:16;fill:none}#nd .nd-edge-line{stroke:#458cc0;stroke-width:2.5;fill:none;pointer-events:none}#nd .nd-top-edge:hover .nd-edge-line,#nd .nd-edge-active .nd-edge-line,#nd .nd-top-edge:focus .nd-edge-line{stroke:#e67e22;stroke-width:5}#nd .nd-top-node{cursor:pointer}#nd .nd-top-node rect{fill:#28313d;stroke:#8495a9;stroke-width:1.5}#nd .nd-top-node text{fill:white;font-size:12px;pointer-events:none}#nd .nd-top-node .nd-node-info{fill:#a9c9e4;font-size:10px}
+
+/* Detailed topology only; other views unchanged. */
+#nd .nd-top-style button,#nd .nd-tools>button{border:1px solid #a5acb6;border-radius:5px;background:#394351;color:#fff;padding:7px 11px;cursor:pointer}#nd .nd-port-graph{display:block;max-width:none;flex:none}#nd .nd-top-card-bg{fill:#28313d;stroke:#8495a9;stroke-width:1.5}#nd .nd-top-card-head{fill:#394351}#nd .nd-top-card-header{cursor:pointer}#nd .nd-top-card-name{fill:#fff;font-size:13px;font-weight:600}#nd .nd-top-card-meta,#nd .nd-top-card-empty{fill:#b9d0e2;font-size:11px}#nd .nd-top-port{cursor:pointer}#nd .nd-top-port-chip{fill:#dcecd8;stroke:#72936c;stroke-width:1}#nd .nd-top-port text{fill:#16291b;font-size:11px;pointer-events:none}#nd .nd-top-port-anchor{fill:#458cc0;stroke:#fff;stroke-width:1}#nd .nd-top-port-selected .nd-top-port-chip{fill:#ffb66d;stroke:#e67e22;stroke-width:2}#nd .nd-top-port-peer .nd-top-port-chip{fill:#8ed5ff;stroke:#458cc0;stroke-width:2}#nd .nd-top-port:hover .nd-top-port-chip,#nd .nd-top-port:focus .nd-top-port-chip{stroke:#e67e22;stroke-width:2}#nd .nd-edge-dim{opacity:.19}#nd .nd-edge-dim:hover,#nd .nd-edge-dim:focus{opacity:1}#nd .nd-top-card-header:focus .nd-top-card-head{stroke:#e67e22;stroke-width:2}
+
+#nd .nd-top-port-fiber .nd-top-port-chip{stroke:#4da7ef;stroke-width:1.5}
+
+/* 0.9.4 topology layout controls; original rack and all-device views unchanged. */
+#nd .nd-layout-tools{margin:8px 0;align-items:center}#nd .nd-layout-tools select{max-width:340px;min-width:120px;flex:1}#nd .nd-layout-tools input[type=color]{width:42px;height:35px;padding:3px;cursor:pointer}#nd .nd-layout-tools button:disabled{opacity:.5;cursor:default}#nd .nd-group-toggle{display:flex;gap:4px;align-items:center;white-space:nowrap}#nd .nd-layout-status{font-size:11px;color:inherit;flex-basis:100%;opacity:.8}#nd .nd-rack-groups{pointer-events:none}#nd .nd-rack-group-bg{fill:#c5d9ee;fill-opacity:.33;stroke:#94abc3;stroke-dasharray:7 4}#nd .nd-rack-group-label{fill:#334e68;font-size:13px;font-weight:600}#nd .nd-drag-handle{cursor:grab;touch-action:none;user-select:none}#nd .nd-drag-handle.nd-dragging{cursor:grabbing}#nd .nd-top-edge .nd-edge-line{stroke:var(--nd-cable-color,#458cc0)}#nd .nd-top-edge:hover .nd-edge-line,#nd .nd-edge-active .nd-edge-line,#nd .nd-top-edge:focus .nd-edge-line{stroke:var(--nd-cable-color,#e67e22);stroke-width:5;filter:drop-shadow(0 0 2px #e67e22)}#nd:fullscreen,#nd.nd-fullscreen-fallback{background:#f4f6f8;color:#202731;padding:14px;box-sizing:border-box;overflow:auto;grid-template-columns:205px minmax(0,1fr) 285px;min-height:100vh}#nd.nd-fullscreen-fallback{position:fixed;inset:0;z-index:2147483647}#nd:fullscreen .nd-topology-wrap,#nd.nd-fullscreen-fallback .nd-topology-wrap{max-height:calc(100vh - 220px);min-height:240px}#nd:fullscreen #nd-details,#nd.nd-fullscreen-fallback #nd-details{grid-column:auto;background:#fff}#nd:fullscreen #nd-details a,#nd.nd-fullscreen-fallback #nd-details a{color:#b85c16}
+
+/* 0.9.5: independent read-only SNMP layer. Existing GLPI colors remain intact. */
+#nd .nd-snmp-toolbar{padding:8px;border:1px solid #c8d1dc;border-radius:6px;margin:8px 0}#nd .nd-snmp-toolbar strong{font-size:12px;flex-basis:100%}#nd .nd-snmp-toolbar label{display:flex;align-items:center;gap:4px}#nd .nd-snmp-legend{font-size:12px}#nd .nd-live-device{font-size:11px;color:#c4d1df;margin-top:4px;overflow-wrap:anywhere}#nd .nd-live-device[data-status=online]{color:#a5df9a}#nd .nd-live-device[data-status=no_response]{color:#ffb1a8}#nd .nd-live-dot{fill:#9ca3af;stroke:white;stroke-width:1}#nd .nd-live-dot[data-status=online]{fill:#34b46b}#nd .nd-live-dot[data-status=no_response]{fill:#db5147}#nd .nd-live-dot[data-status=stale]{fill:#e6a347}#nd .nd-port[data-nd-live=up]{box-shadow:inset 0 -5px #16a34a}#nd .nd-port[data-nd-live=down]{box-shadow:inset 0 -5px #dc2626}#nd .nd-port[data-nd-live=admin-down]{box-shadow:inset 0 -5px #eab308}#nd .nd-top-port[data-nd-live=up] .nd-top-port-anchor{fill:#16a34a}#nd .nd-top-port[data-nd-live=down] .nd-top-port-anchor{fill:#dc2626}#nd .nd-top-port[data-nd-live=admin-down] .nd-top-port-anchor{fill:#eab308}#nd .nd-live-detail{border-top:1px solid #aeb8c6;margin-top:12px;padding-top:8px}#nd .nd-live-detail p{margin:6px 0;font-size:12px}
+
+/* 0.9.5.2: management URL, independent of live status. */
+#nd .nd-live-device a.nd-management-ip{display:inline;color:#8ed5ff;text-decoration:underline;text-underline-offset:2px;font-weight:600;margin:0;cursor:pointer}
+#nd .nd-live-device a.nd-management-ip:hover{color:#fff}
+#nd #nd-details a.nd-management-ip{display:inline;margin:0;text-decoration:underline;font-weight:600}
+
+/* 0.9.5.4 — UP double pulse, DOWN slow glow. */
+@keyframes nd-snmp-up-led {
+  0%,100% { box-shadow: inset 0 -5px #16a34a; }
+  18%,38% { box-shadow: inset 0 -5px #4ade80; }
+  28%,55% { box-shadow: inset 0 -5px #15803d; }
+}
+@keyframes nd-snmp-down-led {
+  0%,100% { box-shadow: inset 0 -5px #b91c1c; }
+  50% { box-shadow: inset 0 -5px #fb7185; }
+}
+@keyframes nd-snmp-up-anchor {
+  0%,100% { fill: #16a34a; }
+  18%,38% { fill: #4ade80; }
+  28%,55% { fill: #15803d; }
+}
+@keyframes nd-snmp-down-anchor {
+  0%,100% { fill: #b91c1c; }
+  50% { fill: #fb7185; }
+}
+#nd .nd-port[data-nd-live=up] { animation: nd-snmp-up-led 3s ease-in-out infinite; }
+#nd .nd-port[data-nd-live=down] { animation: nd-snmp-down-led 3.6s ease-in-out infinite; }
+#nd .nd-top-port[data-nd-live=up] .nd-top-port-anchor { animation: nd-snmp-up-anchor 3s ease-in-out infinite; }
+#nd .nd-top-port[data-nd-live=down] .nd-top-port-anchor { animation: nd-snmp-down-anchor 3.6s ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) {
+  #nd .nd-port[data-nd-live=up], #nd .nd-port[data-nd-live=down],
+  #nd .nd-top-port[data-nd-live=up] .nd-top-port-anchor,
+  #nd .nd-top-port[data-nd-live=down] .nd-top-port-anchor { animation: none; }
+}
+
+/* 0.9.5.5: native GLPI equipment card link in device panels. */
+#nd .nd-device h3 a.nd-device-title-link{color:inherit;text-decoration:none;cursor:pointer}
+#nd .nd-device h3 a.nd-device-title-link:hover,#nd .nd-device h3 a.nd-device-title-link:focus-visible{color:#8ed5ff;text-decoration:underline;text-underline-offset:3px}
+#nd .nd-device h3 a.nd-device-title-link:focus-visible{outline:2px solid #8ed5ff;outline-offset:2px}
+
+/* 0.9.6: independent FDB view, no changes to live LEDs or wire layout. */
+#nd .nd-mac-detail{border-top:1px solid #aeb8c6;margin-top:12px;padding-top:8px}#nd .nd-mac-detail p{font-size:12px}#nd .nd-mac-list{max-height:360px;overflow:auto}#nd .nd-mac-row{padding:7px 0;border-bottom:1px solid #c8d1dc;display:flex;flex-direction:column;gap:3px;font-size:12px}#nd .nd-mac-row a{display:inline;margin:0}#nd .nd-mac-page{overflow:auto}#nd .nd-mac-table{width:100%;border-collapse:collapse;font-size:12px}#nd .nd-mac-table th,#nd .nd-mac-table td{padding:7px;text-align:left;border-bottom:1px solid #c8d1dc;vertical-align:top}#nd .nd-mac-table th{background:#e1e7ed;color:#273341}#nd .nd-mac-table button{border:0;background:none;text-align:left;color:#276598;text-decoration:underline;cursor:pointer}#nd .nd-port[data-nd-mac-count]:not([data-nd-mac-count="0"]){position:relative}#nd .nd-port[data-nd-mac-count]:not([data-nd-mac-count="0"])::before{content:attr(data-nd-mac-count);position:absolute;right:1px;top:0;font-size:8px;line-height:9px;color:#17212b;background:#c7e5fc;border-radius:2px;padding:0 2px;pointer-events:none}#nd .nd-port[data-nd-mac-count]:not([data-nd-mac-count="0"]){padding-top:9px}
