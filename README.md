@@ -143,4 +143,4 @@ To disable all polling, repeat for `networkdesk-snmp`. Restore the backed-up plu
 
 ## Authors and licensing
 
-**hxmbrd** — author and maintainer. NetworkDesk is distributed under **GNU GPL version 3 only (GPL-3.0-only)**, without warranty. See [LICENSE](LICENSE), [licensing record](LICENSE-STATUS.md) and [external dependencies](DEPENDENCIES.md). The project owner confirmed the right to publish and selected this precise form of the original GPLv3 declaration on 2026-11-27.
+**hxmbrd** — author and maintainer. NetworkDesk is distributed under **GNU GPL version 3 only (GPL-3.0-only)**, without warranty. See [LICENSE](LICENSE), [licensing record](docs/LICENSING.md) and [external dependencies](DEPENDENCIES.md). The project owner confirmed the right to publish and selected this precise form of the original GPLv3 declaration on 2026-11-27.

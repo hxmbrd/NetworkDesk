@@ -15,4 +15,4 @@ No Composer/npm manifests, vendored libraries, bundled fonts, remote CDN imports
 
 Screenshots use the included frontend with synthetic data. Logo PNGs were generated for this project using OpenAI image generation; no stock-photo, font or icon package was added. See [brand provenance](docs/brand/README.md). The plugin menu requests an icon from the GLPI host.
 
-Runtime dependencies are installed separately. Their licenses do not establish NetworkDesk's redistribution rights. If future packages bundle runtimes, libraries, fonts or assets, review exact versions and carry required notices. See [LICENSE-STATUS.md](LICENSE-STATUS.md).
+Runtime dependencies are installed separately. Their licenses do not establish NetworkDesk's redistribution rights. If future packages bundle runtimes, libraries, fonts or assets, review exact versions and carry required notices. See [LICENSE-STATUS.md](docs/LICENSING.md).

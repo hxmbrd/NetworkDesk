@@ -1,6 +1,6 @@
 # Contributing
 
-NetworkDesk uses GPL-3.0-only. Contributions must be compatible with that license and must be work you have the right to submit. See [LICENSE](LICENSE) and the [licensing record](LICENSE-STATUS.md).
+NetworkDesk uses GPL-3.0-only. Contributions must be compatible with that license and must be work you have the right to submit. See [LICENSE](LICENSE) and the [licensing record](docs/LICENSING.md).
 
 Keep changes focused and preserve read-only behavior. Do not infer physical connections from learned MACs or guess ambiguous port mappings. Preserve GLPI access checks and keep polling out of web requests.
 
