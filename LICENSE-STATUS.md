@@ -1,9 +1,9 @@
-# License status
+# Licensing record
 
-The supplied 0.9.6 archive declares `GPLv3` in `setup.php`. That value is preserved. No LICENSE/COPYING file, copyright notice, dependency manifest or complete authorship history was supplied.
+NetworkDesk is distributed under **GNU General Public License version 3 only (GPL-3.0-only)**. The complete, unmodified license text is in [LICENSE](LICENSE), obtained from [GNU](https://www.gnu.org/licenses/gpl-3.0.txt).
 
-This preparation does not choose a new license, add an “or later” grant, assert sole copyright ownership or certify a right to publish. Updating display attribution to hxmbrd does not transfer rights. The prior attribution is retained in the original archive held locally, outside this distributable.
+The supplied 0.9.6 archive declared GPLv3 but did not include its text. On 2026-11-27, project owner **hxmbrd** confirmed that the project was independently developed, was not commissioned by an organization, and that they hold the right to publish it. The owner explicitly selected GPL-3.0-only and authorized public publication. The former deployment branding is not retained as authorship attribution on that basis.
 
-Before making the repository public, establish the right to redistribute the original and modified work, resolve any required attribution, confirm the exact license grant and include the corresponding text and notices. If attribution must be preserved, resolve that obligation before publication rather than silently removing it. Metadata alone does not settle these questions.
+This records the owner's declaration, not an independent legal investigation. External runtime dependencies retain their own terms; they are not bundled. See [DEPENDENCIES.md](DEPENDENCIES.md). The generated branding assets are documented in [docs/brand/README.md](docs/brand/README.md).
 
-Keep this package as a private review draft until resolved. External runtime licenses are listed in [DEPENDENCIES.md](DEPENDENCIES.md); no runtime binaries are shipped.
+Copyright (C) 2026 hxmbrd. NetworkDesk is provided without warranty; see the license for the applicable terms.

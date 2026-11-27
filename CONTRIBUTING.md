@@ -1,6 +1,6 @@
 # Contributing
 
-The project is a private publication draft. Resolve [license/provenance questions](LICENSE-STATUS.md) before public release or public contributions.
+NetworkDesk uses GPL-3.0-only. Contributions must be compatible with that license and must be work you have the right to submit. See [LICENSE](LICENSE) and the [licensing record](LICENSE-STATUS.md).
 
 Keep changes focused and preserve read-only behavior. Do not infer physical connections from learned MACs or guess ambiguous port mappings. Preserve GLPI access checks and keep polling out of web requests.
 

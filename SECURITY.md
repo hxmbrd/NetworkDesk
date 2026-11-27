@@ -2,7 +2,7 @@
 
 ## Reporting
 
-Do not post credentials, real inventory, caches, packet captures or live SNMP exports in issues or pull requests. During this private draft, report vulnerabilities through a private channel agreed with maintainer **hxmbrd**. No public security mailbox or enabled GitHub private-reporting endpoint is claimed.
+Do not post credentials, real inventory, caches, packet captures or live SNMP exports in issues or pull requests. Report vulnerabilities through a private channel agreed with maintainer **hxmbrd**. No public security mailbox or enabled GitHub private-reporting endpoint is claimed. If you have no private contact channel, open an issue asking for one without disclosing vulnerability details.
 
 Provide an affected version, impact and minimal synthetic reproduction. If a credential is exposed, rotate it and remove it from artifacts and repository history; a later deletion alone does not revoke it.
 

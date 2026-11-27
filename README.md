@@ -1,8 +1,14 @@
+<p align="center">
+  <img src="docs/brand/networkdesk-header.png" alt="NetworkDesk — network infrastructure visualization" width="760">
+</p>
+
 # NetworkDesk
 
 Network infrastructure visualization and read-only SNMP monitoring for **GLPI 10.x**.
 
-**Version 0.9.6 · Author and maintainer: hxmbrd · Private publication draft**
+**Version 0.9.6 · GLPI 10.x · Author and maintainer: hxmbrd · GPL-3.0-only**
+
+[Installation](#installation) · [Screenshots](#screenshots) · [Security](SECURITY.md) · [Русский отчёт](docs/REPORT-RU.md)
 
 Explore racks, follow documented port connections and inspect live link states and learned MAC addresses from one GLPI view. GLPI remains the source of documented connections; SNMP adds observations without changing inventory or switch configuration.
 
@@ -109,7 +115,7 @@ Each poller uses its own lock. systemd does not start a second instance of an ac
 - The MAC table displays at most 1,000 filtered rows. Traffic rates need compatible counters and two suitable samples; SNMPv1 has no rate calculation here.
 - No IPv6 management targets, ARP/IP discovery, LLDP discovery, MAC movement history, CPU/temperature/PoE monitoring, historical graphs or automatic cable creation.
 - Equipment management links currently use HTTP. Use HTTPS manually where required. Browser layout settings are not synchronized between computers.
-- Large-inventory performance, live GLPI permissions, actual devices and systemd execution require deployment testing. This draft is not certified for production.
+- Large-inventory performance, live GLPI permissions, actual devices and systemd execution require deployment testing. This release has not been certified for production.
 
 ## Development checks
 
@@ -137,4 +143,4 @@ To disable all polling, repeat for `networkdesk-snmp`. Restore the backed-up plu
 
 ## Authors and licensing
 
-**hxmbrd** is the author/maintainer listed in the release metadata. The source archive declares `GPLv3`; that declaration is retained unchanged. It does not include a license text or enough provenance to settle the exact grant and attribution obligations. No new license has been selected. Keep this repository private until those questions are resolved. See [LICENSE-STATUS](LICENSE-STATUS.md) and [DEPENDENCIES](DEPENDENCIES.md).
+**hxmbrd** — author and maintainer. NetworkDesk is distributed under **GNU GPL version 3 only (GPL-3.0-only)**, without warranty. See [LICENSE](LICENSE), [licensing record](LICENSE-STATUS.md) and [external dependencies](DEPENDENCIES.md). The project owner confirmed the right to publish and selected this precise form of the original GPLv3 declaration on 2026-11-27.

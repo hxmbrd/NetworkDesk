@@ -1,6 +1,13 @@
 # Changelog
 
-## Unreleased — publication preparation
+## 0.9.6 — publication package (2026-11-27)
+
+- Added NetworkDesk logo assets and a branded README header.
+- Added a separate Russian preparation and validation report.
+- Recorded the owner’s publication authorization, specified GPL-3.0-only and included the official license text.
+- Repackaged the sanitized source without changing runtime behavior.
+
+## Publication preparation (2026-11-26)
 
 - Prepared from the supplied NetworkDesk 0.9.6 ZIP; plugin version remains 0.9.6.
 - Replaced organization branding with neutral UI text and credited hxmbrd in metadata and documentation.
@@ -8,7 +15,7 @@
 - Removed the deployment-specific device exclusion. New example configurations require explicit allowlist, credentials and enablement. Existing external configurations are not changed.
 - Added installation, systemd, limitations, security and contribution documentation, dependency/license review, synthetic screenshots and validation report.
 - Added ignore and archive rules. No change to polling, mapping, API authorization, topology or database behavior.
-- Public release remains pending licensing/provenance review and live deployment validation.
+- At preparation time, public release was pending licensing/provenance review. The owner resolved the licensing decision on 2026-11-27; live deployment validation is still required.
 
 ## 0.9.6 — MAC discovery
 

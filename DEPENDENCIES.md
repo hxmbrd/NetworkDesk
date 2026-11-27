@@ -1,6 +1,6 @@
 # Dependencies and license review
 
-Review date: 2026-11-26. Inventory covers the supplied archive and this preparation.
+Source dependency review: 2026-11-26. Branding and licensing update: 2026-11-27. Inventory covers the supplied archive and this preparation.
 
 | Component | Use | License/source | Bundled |
 | --- | --- | --- | --- |
@@ -13,6 +13,6 @@ Review date: 2026-11-26. Inventory covers the supplied archive and this preparat
 
 No Composer/npm manifests, vendored libraries, bundled fonts, remote CDN imports or third-party asset packages were found. JavaScript and CSS are supplied as project source. This inventory cannot independently prove the provenance of every source line.
 
-Screenshots use the included frontend with synthetic data; no third-party photo/icon package was added. The plugin menu requests an icon from the GLPI host.
+Screenshots use the included frontend with synthetic data. Logo PNGs were generated for this project using OpenAI image generation; no stock-photo, font or icon package was added. See [brand provenance](docs/brand/README.md). The plugin menu requests an icon from the GLPI host.
 
 Runtime dependencies are installed separately. Their licenses do not establish NetworkDesk's redistribution rights. If future packages bundle runtimes, libraries, fonts or assets, review exact versions and carry required notices. See [LICENSE-STATUS.md](LICENSE-STATUS.md).
