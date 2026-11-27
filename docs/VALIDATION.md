@@ -42,4 +42,4 @@ Test IPv4 values use documentation ranges. MAC examples use locally administered
 - Drag persistence across reloads, every UI control, accessibility and large-inventory performance.
 - Full penetration testing, independent source provenance or legal clearance for publication.
 
-The review environment is Windows. Supplied systemd units were inspected but not executed. The original GPLv3 declaration was clarified to GPL-3.0-only at the owner’s explicit direction on 2026-11-27. The owner confirmed publication rights; see the [licensing record](../LICENSE-STATUS.md). Branding and documentation updates do not change runtime behavior.
+The review environment is Windows. Supplied systemd units were inspected but not executed. The original GPLv3 declaration was clarified to GPL-3.0-only at the owner’s explicit direction on 2026-11-27. The owner confirmed publication rights; see the [licensing record](LICENSING.md). Branding and documentation updates do not change runtime behavior.
