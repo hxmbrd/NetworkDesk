@@ -1,6 +1,6 @@
 # Publication preparation validation
 
-Date: 2026-11-26. Package: NetworkDesk 0.9.6, sanitized private review draft.
+Code and browser checks: 2026-11-26. Branding/licensing update: 2026-11-27. Package: NetworkDesk 0.9.6, sanitized publication package.
 
 ## Provenance and changes
 
@@ -10,7 +10,7 @@ Input SHA-256: `8b1aff0254acbdbe7bc4695b871ec83cf7dcc355dde00f493aa6d11dd99eeaa9
 
 The original archive is kept outside the distributable. Of its 23 files, six were changed: `setup.php`, `front/index.php`, `config/snmp.example.php`, `tests/mapping.php`, `tests/mac.php` and `README.md`. Remaining original files, including polling and mapping implementations, AJAX endpoints, JavaScript, CSS and systemd units, are byte-identical. New files provide documentation, ignore rules, synthetic FDB input and screenshots.
 
-The UI change is a branding string. Metadata credits hxmbrd while preserving version and license fields. Test replacements retain original cases with fictional values. The example configuration removes a deployment-specific subnet/device exclusion and requires explicit enablement and allowlist. No live configuration is part of the package.
+The UI change is a branding string. Metadata credits hxmbrd and preserves version 0.9.6. On 2026-11-27 the owner selected the precise license identifier GPL-3.0-only; the corresponding metadata and SPDX/copyright comments were added. Test replacements retain original cases with fictional values. The example configuration removes a deployment-specific subnet/device exclusion and requires explicit enablement and allowlist. No live configuration is part of the package.
 
 ## Executed checks
 
@@ -42,4 +42,4 @@ Test IPv4 values use documentation ranges. MAC examples use locally administered
 - Drag persistence across reloads, every UI control, accessibility and large-inventory performance.
 - Full penetration testing, independent source provenance or legal clearance for publication.
 
-The review environment is Windows. Supplied systemd units were inspected but not executed. The original metadata's `GPLv3` declaration is retained; no new license is chosen. Keep the repository private until [licensing questions](../LICENSE-STATUS.md) are resolved.
+The review environment is Windows. Supplied systemd units were inspected but not executed. The original GPLv3 declaration was clarified to GPL-3.0-only at the owner’s explicit direction on 2026-11-27. The owner confirmed publication rights; see the [licensing record](../LICENSE-STATUS.md). Branding and documentation updates do not change runtime behavior.
